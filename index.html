@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LexiForge AI helps English learners turn passive vocabulary into active vocabulary.">
+  <title>LexiForge AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#/dashboard" aria-label="LexiForge AI home">LexiForge <span>AI</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#/dashboard" data-route="dashboard">Dashboard</a>
+      <a href="#/vocabulary" data-route="vocabulary">My Words</a>
+      <a href="#/practice" data-route="practice">Practice Plan</a>
+      <a href="#/games" data-route="games">Games Zone</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <p class="muted" style="padding:2rem">Loading…</p>
+  </main>
+
+  <noscript><p class="noscript">LexiForge AI needs JavaScript. Please enable it in your browser.</p></noscript>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="edit-dialog" aria-labelledby="edit-title"></dialog>
+
+  <!-- Plain scripts (not modules) so the app also works when opened by double-click. Order matters. -->
+  <script src="js/vocabulary.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
